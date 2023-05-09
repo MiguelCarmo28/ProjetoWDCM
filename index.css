@@ -1,0 +1,19 @@
+header {
+  background-color:darkslategray;
+  padding: 50px;
+  margin-bottom: 0;
+  color: darkseagreen;
+  text-align: center;
+  size: 50px;
+}
+
+h1 {
+  background-image: url(carros-autonomos.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 90px;
+  background-size: 100%;
+  margin-top: 0;
+  color: aliceblue;
+  text-align: center;
+  }
