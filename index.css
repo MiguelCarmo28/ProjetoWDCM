@@ -1,19 +1,18 @@
 header {
-  background-color:darkslategray;
-  padding: 50px;
-  margin-bottom: 0;
-  color: darkseagreen;
-  text-align: center;
-  size: 50px;
+background-color:black ;
+padding: 50px 30px;
+text-align: center;
 }
 
-h1 {
-  background-image: url(carros-autonomos.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 90px;
-  background-size: 100%;
-  margin-top: 0;
+
+.Titulo {
+  font-family: 'Righteous', cursive;
+  color: rgb(21, 128, 222);
+  font-size: 50px;
+}
+
+.subtitulo {
+  font-family: 'Poppins', sans-serif;
   color: aliceblue;
-  text-align: center;
-  }
+  
+}
