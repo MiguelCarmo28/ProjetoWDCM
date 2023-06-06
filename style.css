@@ -22,3 +22,30 @@ a{
   align-items: center;
   justify-content: center;
 }
+
+#capa{
+ background-image: url(imagens/capacartech.jpg); 
+ background-size:cover ;
+ background-position: center;
+ position: relative;
+}
+
+#capa::after{
+  content:'' ;
+  position:absolute;
+  left:0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.8 ;
+ z-index: -1;
+}
+
+#capa h1{
+  display: block;
+  width: fit-content;
+  font-size: 4rem;
+  position: realtive ;
+  color: white;
+}
