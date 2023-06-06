@@ -43,12 +43,32 @@ a{
   z-index: -1;
 }
 
+#capa .capa{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 50px;
+  justify-content: flex-start;
+}
+
 #capa h1{
   display: block;
   width: fit-content;
   font-size: 4rem;
-  position: realtive ;
-  color: white;
+  position: relative ;
+  color: transparent;
+  animation: rev_texto 5s ease forwards;
+  animation-delay: 0.7s;
+}
+
+#capa h1 span{
+  position: absolute;
+  top:0;
+  left:0;
+  height: 100%;
+  width: 0;
+  background-color: lightcoral;
+  animation: caixa_revelacao_titulo 1s ease;
+  animation-delay: 1s;
 }
 
 #capa .cta{
@@ -68,4 +88,27 @@ a{
 #capa .cta:hover {
   color: white;
   background-color:lightcoral ;
+}
+
+#modelo{}
+
+#modelo .modelo{
+  flex-direction: column;
+}
+
+@keyframes caixa_revelacao_titulo{
+  50%{
+    width: 100%;
+    left 0;
+  }
+  100%{
+    width: 0;
+    left:100%;
+  }
+}
+
+@keyframes rev_texto{
+  100%{
+    color: white;
+  }
 }
