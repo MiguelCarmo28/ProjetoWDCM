@@ -23,6 +23,19 @@ a{
   justify-content: center;
 }
 
+p{
+  color: white;
+  text-align: left;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+}
+
+img{
+height: 100%;
+width: 100%;
+object-fit: cover;
+}
+
 #capa{
  background-image: url(imagens/capacartech.jpg); 
  background-size:cover ;
@@ -94,12 +107,103 @@ a{
 
 #modelo .modelo{
   flex-direction: column;
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 100px 0;
+
+}
+
+#modelo .titulo-seccao{
+  font-size: 4rem;
+  font-weight: 300;
+  color: black;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  text-align: center;
+}
+
+#modelo .modelo-bottom{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#modelo .modelo-item{
+  flex-basis: 80%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 10px;
+  background-image: url(imagens/mercedesslroadster.jpg);
+  background-size: cover;
+  margin: 20px 5%;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+#modelo .modelo-item::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  top:0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+
+  opacity: .8;
+  z-index: -1;
+}
+
+#modelo .modelo-bottom .icon{
+  height: 80px;
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+#modelo .modelo-bottom .icon img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#modelo .titulo-seccao span{
+  color: crimson;
+}
+
+#modelo .modelo-top p{
+  color: black;
+font-size: 1.4rem;
+margin-top: 5px;
+line-height: 2.5rem;
+font-weight: 300px;
+letter-spacing: .05rem;
+}
+
+#modelo .modelo-item h2{
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+#modelo .modelo-item p{
+  color: white;
+  text-align: left;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
 }
 
 @keyframes caixa_revelacao_titulo{
   50%{
     width: 100%;
-    left 0;
+    left: 0;
   }
   100%{
     width: 0;
